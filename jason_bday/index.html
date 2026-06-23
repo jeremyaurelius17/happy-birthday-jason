@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Archive of Memories</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Inter:wght@300;400;500&family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #0f172a;
+        color: #f8fafc;
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+      }
+
+      section {
+        padding: 80px 10%;
+      }
+
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        background:
+          linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)),
+          url("cover.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .hero h1 {
+        font-family: "JetBrains Mono";
+        font-size: 4rem;
+        color: #38bdf8;
+      }
+
+      .hero p {
+        margin-top: 20px;
+        max-width: 700px;
+        line-height: 1.8;
+        font-size: 1.1rem;
+      }
+
+      .btn {
+        margin-top: 30px;
+        background: #38bdf8;
+        color: #0f172a;
+        text-decoration: none;
+        padding: 15px 35px;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+        font-family: "Poppins";
+      }
+
+      .timeline {
+        max-width: 800px;
+        margin: auto;
+      }
+
+      .timeline-item {
+        border-left: 3px solid #38bdf8;
+        padding-left: 25px;
+        margin-bottom: 40px;
+      }
+
+      .timeline-item h3 {
+        color: #38bdf8;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+      }
+
+      .card {
+        background: #1e293b;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+
+      .card p {
+        padding: 15px;
+      }
+
+      .video-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      video {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      .skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+      }
+
+      .skill {
+        background: #1e293b;
+        padding: 25px;
+        border-radius: 15px;
+        text-align: center;
+      }
+
+      .terminal {
+        background: #000;
+        border-radius: 15px;
+        padding: 30px;
+        font-family: "JetBrains Mono";
+        color: #00ff66;
+        line-height: 1.8;
+      }
+
+      footer {
+        text-align: center;
+        padding: 50px 20px;
+        color: #94a3b8;
+      }
+
+      .hidden-message {
+        display: none;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 1.2rem;
+        color: #38bdf8;
+      }
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2.3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HERO -->
+
+    <section class="hero">
+      <h1>ARCHIVE_17.0</h1>
+
+      <p>
+        Happy Birthday, Jason.
+        <br /><br />
+        A collection of memories, laughter, random moments, and stories worth
+        keeping.
+      </p>
+
+      <a href="#timeline" class="btn">Open Archive</a>
+    </section>
+
+    <!-- TIMELINE -->
+
+    <section id="timeline">
+      <h2 class="section-title">Timeline</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>2022 - First Meeting</h3>
+          <p>Awal mula semua cerita dimulai.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>2023 - School Moments</h3>
+          <p>Banyak tugas, banyak cerita, banyak tawa.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>2024 - Batu Trip</h3>
+          <p>Salah satu perjalanan yang tidak terlupakan.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>2025 - Graduation</h3>
+          <p>Satu bab selesai, petualangan baru dimulai.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+
+    <section>
+      <h2 class="section-title">Memories Gallery</h2>
+
+      <div class="gallery">
+        <div class="card">
+          <img src="foto1.jpg" />
+          <p>Caption kenangan pertama.</p>
+        </div>
+
+        <div class="card">
+          <img src="foto2.jpg" />
+          <p>Foto favorit sepanjang masa.</p>
+        </div>
+
+        <div class="card">
+          <img src="foto3.jpg" />
+          <p>Momen yang selalu bikin ketawa.</p>
+        </div>
+
+        <div class="card">
+          <img src="foto4.jpg" />
+          <p>Salah satu perjalanan terbaik.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEOS -->
+
+    <section>
+      <h2 class="section-title">Video Vault</h2>
+
+      <div class="video-grid">
+        <video controls>
+          <source src="video1.mp4" type="video/mp4" />
+        </video>
+
+        <video controls>
+          <source src="video2.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <!-- APPRECIATION -->
+
+    <section>
+      <h2 class="section-title">Things I Appreciate About You</h2>
+
+      <div class="skills">
+        <div class="skill">🧠 Smart</div>
+        <div class="skill">💻 Tech Enthusiast</div>
+        <div class="skill">🎬 Movie Lover</div>
+        <div class="skill">⚡ Curious</div>
+        <div class="skill">🤝 Reliable Friend</div>
+        <div class="skill">🌱 Always Growing</div>
+      </div>
+    </section>
+
+    <!-- LETTER -->
+
+    <section>
+      <h2 class="section-title">Message</h2>
+
+      <div class="terminal" id="typing"></div>
+    </section>
+
+    <!-- SECRET -->
+
+    <section>
+      <h2 class="section-title">Secret Achievement</h2>
+
+      <p style="text-align: center">Press CTRL + J</p>
+
+      <div class="hidden-message" id="secret">
+        🏆 Achievement Unlocked:
+        <br /><br />
+        Best Friend Found ✓
+      </div>
+    </section>
+
+    <footer>
+      Built with memories, gratitude, and a little bit of code.
+
+      <br /><br />
+
+      © 2026 Jeremy
+    </footer>
+
+    <script>
+      const message = `C:\\friends\\jason>
+
+Happy Birthday, Jason.
+
+We've shared countless memories,
+random conversations,
+school projects,
+and unforgettable moments.
+
+No matter where life takes us,
+I'm grateful that our paths crossed.
+
+Thank you for being one of the people
+who made these years memorable.
+
+- Jeremy`;
+
+      let i = 0;
+
+      function typeWriter() {
+        if (i < message.length) {
+          document.getElementById("typing").innerHTML += message.charAt(i);
+          i++;
+          setTimeout(typeWriter, 30);
+        }
+      }
+
+      typeWriter();
+
+      document.addEventListener("keydown", (e) => {
+        if (e.ctrlKey && e.key.toLowerCase() === "j") {
+          e.preventDefault();
+
+          document.getElementById("secret").style.display = "block";
+        }
+      });
+    </script>
+  </body>
+</html>
